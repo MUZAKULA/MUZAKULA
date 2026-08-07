@@ -1,1 +1,1 @@
-function send(e){e.preventDefault();document.getElementById('msg').textContent='Дякуємо! Це демонстрація. Пізніше ми підключимо справжню форму.';return false;}
+function send(e){e.preventDefault();document.getElementById('msg').innerText='Дякуємо! Скоро підключимо справжню форму.';return false;}
