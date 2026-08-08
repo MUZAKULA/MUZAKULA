@@ -1,204 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MUZAKULA — музика на USB-флешках. Великі музичні збірки для авто, дому та відпочинку.">
-  <title>MUZAKULA — твій світ музики</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MUZAKULA — твій океан музики. Великі музичні збірки на USB-флешці.">
+  <title>MUZAKULA — твій океан музики</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="#top">
-      <img src="logo.png" alt="MUZAKULA">
-      <span><b>MUZAKULA</b><small>ТВІЙ СВІТ МУЗИКИ</small></span>
-    </a>
-
-    <nav class="menu">
-      <a class="active" href="#top">Головна</a>
-      <a href="#collections">Збірки</a>
-      <a href="#how">Як це працює</a>
-      <a href="#reviews">Відгуки</a>
-      <a href="#order">Замовити</a>
-    </nav>
-
-    <a class="telegram" href="#order">Замовити</a>
-    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
-  </div>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="MUZAKULA">
+    <img src="assets/logo.png" alt="MUZAKULA">
+  </a>
+  <nav class="nav" id="nav">
+    <a class="active" href="#home">Головна</a>
+    <a href="#collections">Збірки</a>
+    <a href="#how">Як це працює</a>
+    <a href="#reviews">Відгуки</a>
+    <a href="#order">Замовити</a>
+  </nav>
+  <a class="header-order" href="#order">Замовити</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
 </header>
 
-<main id="top">
-
-<section class="hero">
-  <div class="hero-glow"></div>
-  <div class="container hero-grid">
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
     <div class="hero-copy">
-      <div class="eyebrow">МУЗИКА, ЯКА ЗАВЖДИ ПОРУЧ</div>
-      <h1>ТВІЙ СВІТ<br><span>МУЗИКИ</span></h1>
-      <p class="hero-text">Великі музичні збірки на USB-флешці — для автомобіля, дому та гарного настрою.</p>
-      <div class="hero-buttons">
-        <a class="btn primary" href="#collections">Обрати збірку <span>→</span></a>
-        <a class="btn ghost" href="#order">Залишити заявку</a>
+      <div class="eyebrow">ПОРИНЬ У СВІТ МУЗИКИ</div>
+      <h1>ТВІЙ ОКЕАН<br><span>МУЗИКИ</span></h1>
+      <p class="lead">Великі музичні збірки на USB-флешці — для автомобіля, дому та гарного настрою.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#collections">Обрати збірку <span>→</span></a>
+        <a class="btn btn-outline" href="#order">✈&nbsp; Залишити заявку</a>
       </div>
-      <div class="hero-points">
+      <div class="checks">
         <span>✓ Готово до прослуховування</span>
         <span>✓ MP3 у високій якості</span>
         <span>✓ Подарунок до кожної збірки</span>
       </div>
     </div>
-
-    <div class="hero-logo">
-      <div class="logo-ring"></div>
-      <img src="logo.png" alt="Логотип MUZAKULA">
-    </div>
+    <div class="hero-art" aria-hidden="true"></div>
   </div>
 </section>
 
-<section class="numbers">
-  <div class="container numbers-grid">
-    <div><strong>1000+</strong><span>пісень у SILVER</span></div>
-    <div><strong>2000+</strong><span>пісень у GOLD</span></div>
-    <div><strong>5000+</strong><span>пісень у PLATINUM</span></div>
-    <div><strong>1</strong><span>USB-флешка — і музика з тобою</span></div>
+<section class="stats">
+  <div><strong>1000+</strong><small>пісень у SILVER</small></div>
+  <div><strong>2000+</strong><small>пісень у GOLD</small></div>
+  <div><strong>5000+</strong><small>пісень у PLATINUM</small></div>
+  <div><strong>1</strong><small>USB-флешка — музика з тобою</small></div>
+</section>
+
+<section class="section collections" id="collections">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">ОБИРАЙ СВОЮ</div>
+      <h2>Музична <span>збірка</span></h2>
+    </div>
+    <p>Три варіанти наповнення — від компактної колекції до максимального музичного океану.</p>
+  </div>
+
+  <div class="cards">
+    <article class="card silver">
+      <div class="medal">S</div>
+      <div class="card-label">SILVER</div>
+      <h3>Більше 1000</h3>
+      <p>пісень + автопарфум<br>в подарунок</p>
+      <div class="card-note">Компактна колекція для щоденного прослуховування.</div>
+      <a href="#order" class="card-btn">Обрати SILVER →</a>
+    </article>
+
+    <article class="card gold featured">
+      <div class="popular">НАЙПОПУЛЯРНІША</div>
+      <div class="medal">G</div>
+      <div class="card-label">GOLD</div>
+      <h3>Більше 2000</h3>
+      <p>пісень + автопарфум<br>в подарунок</p>
+      <div class="card-note">Більше жанрів, більше хітів, більше настрою.</div>
+      <a href="#order" class="card-btn">Обрати GOLD →</a>
+    </article>
+
+    <article class="card platinum">
+      <div class="medal">P</div>
+      <div class="card-label">PLATINUM</div>
+      <h3>Більше 5000</h3>
+      <p>пісень + автопарфум<br>в подарунок</p>
+      <div class="card-note">Максимальна музична база для справжнього меломана.</div>
+      <a href="#order" class="card-btn">Обрати PLATINUM →</a>
+    </article>
   </div>
 </section>
 
-<section class="section" id="collections">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">ОБИРАЙ СВОЮ</div>
-        <h2>Музична <span>збірка</span></h2>
-      </div>
-      <p>Три варіанти наповнення — від компактної колекції до максимальної музичної бази.</p>
-    </div>
-
-    <div class="cards">
-      <article class="card silver">
-        <div class="metal">S</div>
-        <div class="card-title">SILVER</div>
-        <div class="card-sub">більше 1000 пісень</div>
-        <div class="card-line"></div>
-        <ul>
-          <li>Велика музична колекція</li>
-          <li>Популярні хіти та класика</li>
-          <li>Зручно для автомобіля</li>
-          <li><b>Автопарфум у подарунок</b></li>
-        </ul>
-        <a class="card-btn" href="#order" data-package="SILVER">Замовити SILVER <span>→</span></a>
-      </article>
-
-      <article class="card gold featured">
-        <div class="badge">НАЙПОПУЛЯРНІША</div>
-        <div class="metal">G</div>
-        <div class="card-title">GOLD</div>
-        <div class="card-sub">більше 2000 пісень</div>
-        <div class="card-line"></div>
-        <ul>
-          <li>Розширена музична колекція</li>
-          <li>Хіти різних років та жанрів</li>
-          <li>Ідеальний варіант для авто</li>
-          <li><b>Автопарфум у подарунок</b></li>
-        </ul>
-        <a class="card-btn" href="#order" data-package="GOLD">Замовити GOLD <span>→</span></a>
-      </article>
-
-      <article class="card platinum">
-        <div class="metal">P</div>
-        <div class="card-title">PLATINUM</div>
-        <div class="card-sub">більше 5000 пісень</div>
-        <div class="card-line"></div>
-        <ul>
-          <li>Максимальна музична база</li>
-          <li>Безліч жанрів та епох</li>
-          <li>Для справжніх меломанів</li>
-          <li><b>Автопарфум у подарунок</b></li>
-        </ul>
-        <a class="card-btn" href="#order" data-package="PLATINUM">Замовити PLATINUM <span>→</span></a>
-      </article>
-    </div>
+<section class="section how" id="how">
+  <div class="eyebrow">ПРОСТО І ЗРУЧНО</div>
+  <h2>Як це <span>працює</span></h2>
+  <div class="steps">
+    <div class="step"><b>01</b><h3>Обираєш збірку</h3><p>Silver, Gold або Platinum.</p></div>
+    <div class="step"><b>02</b><h3>Залишаєш заявку</h3><p>Вказуєш ім'я та номер телефону.</p></div>
+    <div class="step"><b>03</b><h3>Ми зв'язуємось</h3><p>Уточнюємо деталі та спосіб доставки.</p></div>
+    <div class="step"><b>04</b><h3>Отримуєш музику</h3><p>Підключаєш флешку — і слухаєш.</p></div>
   </div>
 </section>
 
-<section class="section dark-section" id="how">
-  <div class="container">
-    <div class="section-head center">
-      <div>
-        <div class="eyebrow">ПРОСТО</div>
-        <h2>Як це <span>працює</span></h2>
-      </div>
+<section class="section reviews" id="reviews">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">ВРАЖЕННЯ</div>
+      <h2>Що кажуть <span>клієнти</span></h2>
     </div>
-    <div class="steps">
-      <div class="step"><div>01</div><h3>Обираєш збірку</h3><p>SILVER, GOLD або PLATINUM — залежно від того, скільки музики хочеш.</p></div>
-      <div class="step"><div>02</div><h3>Залишаєш заявку</h3><p>Вказуєш ім'я та номер телефону. Ми зв'язуємося з тобою.</p></div>
-      <div class="step"><div>03</div><h3>Отримуєш флешку</h3><p>Готова музична збірка приїжджає до тебе — можна слухати одразу.</p></div>
-    </div>
+  </div>
+  <div class="review-grid">
+    <article class="review"><div class="stars">★★★★★</div><h3>«Дуже зручно»</h3><p>«Підключив у машині — і все одразу грає. Дуже багато музики, саме те, що хотів.»</p><b>Олександр</b></article>
+    <article class="review"><div class="stars">★★★★★</div><h3>«Подарунок приємно здивував»</h3><p>«Замовляла батькові. Флешка красиво оформлена, музики багато, ще й автопарфум поклали.»</p><b>Наталія</b></article>
+    <article class="review"><div class="stars">★★★★★</div><h3>«Великий вибір»</h3><p>«Взяв GOLD. Нарешті не треба постійно шукати та скидати пісні самому.»</p><b>Андрій</b></article>
   </div>
 </section>
 
-<section class="section" id="reviews">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">НАШІ КЛІЄНТИ</div>
-        <h2>Що про нас <span>кажуть</span></h2>
-      </div>
-    </div>
-    <div class="reviews">
-      <article class="review"><div class="stars">★★★★★</div><p>«Дуже зручно для машини. Підключив флешку — і величезна колекція вже зі мною.»</p><strong>Олександр</strong><small>Кропивницький</small></article>
-      <article class="review"><div class="stars">★★★★★</div><p>«Замовляла для чоловіка. Сподобалося, що не треба нічого шукати та завантажувати самому.»</p><strong>Наталія</strong><small>Україна</small></article>
-      <article class="review"><div class="stars">★★★★★</div><p>«GOLD — чудовий варіант. Багато музики, все просто і зрозуміло.»</p><strong>Сергій</strong><small>Україна</small></article>
-    </div>
-  </div>
-</section>
-
-<section class="order-section" id="order">
-  <div class="container order-grid">
+<section class="section order-section" id="order">
+  <div class="order-card">
     <div class="order-copy">
-      <div class="eyebrow">ЗАМОВЛЕННЯ</div>
-      <h2>Залиш заявку —<br><span>ми все підкажемо</span></h2>
-      <p>Не знаєш, яку збірку обрати? Напиши нам — допоможемо підібрати оптимальний варіант.</p>
-      <div class="order-benefits">
-        <div>✓ Підкажемо, яка збірка підійде</div>
-        <div>✓ Узгодимо спосіб доставки</div>
-        <div>✓ Відповімо на всі запитання</div>
-      </div>
+      <div class="eyebrow">ГОТОВИЙ ПОРИНУТИ?</div>
+      <h2>Залиш заявку —<br><span>ми все підготуємо</span></h2>
+      <p>Обери свою збірку та залиш номер телефону. Ми зв'яжемося з тобою й уточнимо всі деталі.</p>
     </div>
-
-    <form class="order-form" id="orderForm">
-      <h3>Залишити заявку</h3>
+    <form id="orderForm">
       <label>Збірка
         <select id="package" name="package">
-          <option>SILVER — більше 1000 пісень</option>
-          <option selected>GOLD — більше 2000 пісень</option>
-          <option>PLATINUM — більше 5000 пісень</option>
+          <option>SILVER — 1000+ пісень</option>
+          <option>GOLD — 2000+ пісень</option>
+          <option>PLATINUM — 5000+ пісень</option>
         </select>
       </label>
-      <label>Ваше ім'я<input required name="name" type="text" placeholder="Як до вас звертатися?"></label>
-      <label>Телефон / Telegram<input required name="contact" type="text" placeholder="+380..."></label>
-      <label>Коментар<textarea name="comment" rows="3" placeholder="Наприклад: потрібна музика для автомобіля"></textarea></label>
-      <button class="btn primary full" type="submit">Надіслати заявку <span>→</span></button>
-      <div class="form-note">Ми зв'яжемося з вами найближчим часом.</div>
-      <div class="success" id="success">Дякуємо! Заявку сформовано. Зв'яжіться з нами через Telegram або телефон, щоб завершити замовлення.</div>
+      <label>Ваше ім'я
+        <input name="name" required placeholder="Як до вас звертатися?">
+      </label>
+      <label>Телефон / Telegram
+        <input name="contact" required placeholder="+380...">
+      </label>
+      <label>Коментар
+        <textarea name="comment" rows="3" placeholder="Необов'язково"></textarea>
+      </label>
+      <button class="btn btn-primary full" type="submit">Надіслати заявку <span>→</span></button>
+      <div class="form-status" id="formStatus"></div>
     </form>
   </div>
 </section>
-
 </main>
 
-<footer class="footer">
-  <div class="container footer-grid">
-    <div class="footer-brand"><img src="logo.png" alt="MUZAKULA"><p>Твій світ музики.</p></div>
-    <div><h4>MUZAKULA</h4><a href="#collections">Збірки</a><a href="#how">Як це працює</a><a href="#reviews">Відгуки</a></div>
-    <div><h4>ЗАМОВЛЕННЯ</h4><a href="#order">Залишити заявку</a><span>Доставка по Україні</span></div>
-    <div><h4>КОНТАКТИ</h4><span>Telegram — за заявкою</span><span>Телефон — за заявкою</span></div>
+<footer>
+  <div class="footer-brand">
+    <img src="assets/logo.png" alt="MUZAKULA">
+    <p>Твій океан музики</p>
   </div>
-  <div class="copyright">© 2026 MUZAKULA. Усі права захищені.</div>
+  <div>© <span id="year"></span> MUZAKULA</div>
 </footer>
 
 <script src="script.js"></script>
